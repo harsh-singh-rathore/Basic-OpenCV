@@ -1,2 +1,6 @@
 This repo Consists of the projects that I did while learning basic opencv
 1. Motion Detection: The program first subtracts the second frame from the first then stores the absolute values then Canny Edge detection is used to find the edges in the frames. Then using findContours() function countours are found out. If no contours are found then movement is not detected else movement is detected. The contours are then plotted over the frame and and then the process is repeated.
+
+2. Dominant Colour: The program uses the K-Means algorithm to get the 2 k centres that are minimize the cost and thus getting the two dominant colour showing in two windows.
+
+3. Hand Gesture: This program gets the live feed from the users camera and when the user keeps their hand in the Region of Interest(ROI). In the ROI the image is changed from BGR to Grayscale. Then this grayscale image is blurred using the GaussianBlur() method. Then threshold() is applied to get the thresholded image using the thresholdbinay. The countours are extracted and then the contour with the max area is taken out and then the convex hull is extracted. This image is shown in two windows.
